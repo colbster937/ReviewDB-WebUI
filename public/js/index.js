@@ -13,7 +13,7 @@ async function fetchReviews() {
     const inviteCode = document.querySelector("#inviteCode").value;
     if (!inviteCode) return alert("Please enter an invite code!");
 
-    const apiUrl = `http://127.0.0.1:3000/api/server/${inviteCode}`;
+    const apiUrl = `api/server/${inviteCode}`;
     const reviewsContainer = document.querySelector(".reviews");
     const serverContainer = document.querySelector(".serverInfo");
     const pagination = document.querySelector(".pagination");
